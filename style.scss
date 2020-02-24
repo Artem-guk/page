@@ -1,0 +1,58 @@
+//импорт глобального обнудения
+@import "nullstyle.scss";
+
+body{
+  background: url(img/baxckground.png);
+}
+
+//хэдэр сайта
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 36px;
+  .header__logo{
+    min-width: 160px;
+    min-height: 29px;
+    position: relative;
+    &::after{
+      content: "Your Jazzy Slogan";
+      font-size: 11px;
+      color: #B3B3B3;
+      position: absolute;
+      right: 6px;
+      bottom: -10px;
+    }
+  }
+  .header__navigation{
+    display: flex;
+    min-width: 520px;
+    justify-content: space-between;
+    position: relative;
+    top: -10px;
+    
+    .header__navigation_link{
+      color: #B3B3B3;
+      width: 67px;  
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 15px;
+      font-size: 12px;
+      a{
+        text-decoration: none;
+        &:visited{color: #B3B3B3;}
+      }
+      &:hover{
+        color: #fff;
+        background: linear-gradient(to top, #0EB7FE, #0F8BBF);
+      }
+    }
+    
+  }
+}
+
+//основная часть сайта
+
+

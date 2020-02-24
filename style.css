@@ -1,0 +1,150 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  background: url(img/baxckground.png);
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-top: 36px;
+}
+
+.header .header__logo {
+  min-width: 160px;
+  min-height: 29px;
+  position: relative;
+}
+
+.header .header__logo::after {
+  content: "Your Jazzy Slogan";
+  font-size: 11px;
+  color: #B3B3B3;
+  position: absolute;
+  right: 6px;
+  bottom: -10px;
+}
+
+.header .header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 520px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  top: -10px;
+}
+
+.header .header__navigation .header__navigation_link {
+  color: #B3B3B3;
+  width: 67px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.header .header__navigation .header__navigation_link a {
+  text-decoration: none;
+}
+
+.header .header__navigation .header__navigation_link a:visited {
+  color: #B3B3B3;
+}
+
+.header .header__navigation .header__navigation_link:hover {
+  color: #fff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0EB7FE), to(#0F8BBF));
+  background: linear-gradient(to top, #0EB7FE, #0F8BBF);
+}
+/*# sourceMappingURL=style.css.map */
