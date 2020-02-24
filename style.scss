@@ -47,6 +47,9 @@ body{
         color: #fff;
         background: linear-gradient(to top, #0EB7FE, #0F8BBF);
         box-shadow: black 2px 2px 5px;
+        &:active{
+          box-shadow: 0 0 5px black inset;
+        }
       }
     }
     
@@ -77,6 +80,7 @@ body{
         width: 100%;
         height: 100%;
       }
+      //левая кнопочка карусели
       .button_left{
         display: block;
         width: 38px;
@@ -101,8 +105,9 @@ body{
           top: 4px;
         }
       }
+
+      //правая кнопочка карусели
       .button_right{
-        display: block;
         width: 38px;
         height: 38px;
         border-radius: 19px;
@@ -128,4 +133,10 @@ body{
     }
   }
 }
+}
+
+.animation{
+  &:active{
+    box-shadow: 0 0 5px black inset;
+  }
 }
