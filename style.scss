@@ -9,19 +9,20 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   margin-top: 36px;
   .header__logo{
-    min-width: 160px;
-    min-height: 29px;
+    max-width: 160px;
+    max-height: 29px;
     position: relative;
+    padding: 0px;
     &::after{
       content: "Your Jazzy Slogan";
       font-size: 11px;
       color: #B3B3B3;
       position: absolute;
       right: 6px;
-      bottom: -10px;
+      bottom: -15px;
     }
   }
   .header__navigation{
@@ -29,8 +30,7 @@ body{
     min-width: 520px;
     justify-content: space-between;
     position: relative;
-    top: -10px;
-    
+    top: 10px;
     .header__navigation_link{
       color: #B3B3B3;
       width: 67px;  

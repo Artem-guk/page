@@ -84,16 +84,17 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-top: 36px;
 }
 
 .header .header__logo {
-  min-width: 160px;
-  min-height: 29px;
+  max-width: 160px;
+  max-height: 29px;
   position: relative;
+  padding: 0px;
 }
 
 .header .header__logo::after {
@@ -102,7 +103,7 @@ body {
   color: #B3B3B3;
   position: absolute;
   right: 6px;
-  bottom: -10px;
+  bottom: -15px;
 }
 
 .header .header__navigation {
@@ -114,7 +115,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  top: -10px;
+  top: 10px;
 }
 
 .header .header__navigation .header__navigation_link {
