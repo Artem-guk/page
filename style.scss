@@ -4,7 +4,10 @@
 body{
   background: url(img/baxckground.png);
 }
-
+.page{
+  width: 850px;
+  margin: 0 auto;
+}
 //хэдэр сайта
 .header{
   display: flex;
@@ -130,6 +133,57 @@ body{
           top: 4px;
         }
 
+    }
+  }
+  //товары и описание
+  .articles{
+    display: flex;
+    padding-top: 25px;
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    line-height: 20px;
+    .products{
+      min-width: 36%;
+      border-right: #E4E4E4 solid 2px;
+      .products__title{
+        padding-left: 2px;
+        font-size: 24px;
+        color: #0b81be;
+      }
+      p{
+        padding-top: 19px;
+      }
+    }
+    .products__list{
+      padding-left: 10px;
+      padding-top: 25px;
+      font-style: italic;
+      line-height: 30px;
+      
+      li{
+        padding-left: 20px;
+        background: url('/img/list\ arrow.png') no-repeat 0 12px ;
+        border-bottom: solid 1px #E4E4E4;
+        width: fit-content;
+        &:last-child{
+          border-bottom: none;
+        }
+      }
+    }
+    .description{
+      padding-left: 23px;
+      p{
+        padding-top: 19px;
+      }
+      span{
+        font-weight: 900;
+        font-style: italic;
+      }
+      .description__title{
+        padding-left: 2px;
+        font-size: 24px;
+        color: #0b81be;
+      }
     }
   }
 }
